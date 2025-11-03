@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz o druku 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz o druku 3D</h1>
+
+    <!-- Ekran startowy -->
+    <div id="start-screen" class="center">
+      <p>Masz 20 pytań. Powodzenia!</p>
+      <button id="start-btn" class="btn">Rozpocznij</button>
+    </div>
+
+    <!-- Główny kontener quizu -->
+    <div id="question-container" class="hidden">
+      <div id="progress-wrapper">
+        <progress id="progress" max="20" value="0"></progress>
+        <span id="progress-text">0 / 20</span>
+      </div>
+
+      <h2 id="question">Pytanie pojawi się tutaj</h2>
+      <div id="answer-buttons" class="btn-grid"></div>
+
+      <div class="controls">
+        <button id="next-btn" class="btn hidden">Dalej</button>
+      </div>
+    </div>
+
+    <!-- Wynik -->
+    <div id="result" class="result hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
